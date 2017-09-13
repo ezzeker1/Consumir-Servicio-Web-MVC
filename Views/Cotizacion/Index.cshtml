@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Realizar consulta</h2>
+
+<div class="row">
+    <div>
+        <section class="col col-xs-6">
+            <select id="IdTDocumento" name="IdTDocumento" class="form-control">
+                <option value="">--Seleccionar--</option>
+                <option value="D"> DNI</option>
+                <option value="R"> RUC</option>
+            </select>
+            <input type="text" id="dni" name="dni" placeholder="ingresar dni" />
+            <input type="text" id="mail" name="mail" placeholder="Ingresar Email" />
+            <input type="button" id="clickme" name="clickme" value="consultar" onclick="Accion()" />
+        </section>
+ 
+             
+       
+    </div>
+    <div id="renderBody">
+
+    </div>
+</div>
+
+<script src="~/Scripts/propio/consulta.js"></script>
+@*<script type="text/javascript">
+    $(document).ready(function () {
+        readyIndex();
+    });
+</script>*@
